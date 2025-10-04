@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img\favicon.png" type="image/x-icon">
-    <title>電算社47屆Python班 - 課程網站</title>
+    <title>電算社47屆小社課 - 課程網站</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
@@ -16,7 +16,7 @@
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #eaea66 0%, #a2894bdd 100%);
         }
 
         .card-hover {
@@ -33,7 +33,7 @@
         }
 
         .blog-post:hover {
-            border-color: #764ba2;
+            border-color: #eaea66;
         }
     </style>
     <!-- Navigation -->
@@ -54,8 +54,8 @@
     <header class="gradient-bg text-white">
         <div class="container mx-auto px-6 py-16">
             <div class="text-center">
-                <h1 class="text-5xl font-bold mb-4">電算社47屆Python班</h1>
-                <img src="img\python.png" height="110" width="110" class="block mx-auto"></img>
+                <h1 class="text-5xl font-bold mb-4">電算社47屆小社課</h1>
+                <img src="img\github-mark.png" height="110" width="110" class="block mx-auto"></img>
 
             </div>
         </div>
@@ -64,30 +64,22 @@
     <!-- Calendar Section -->
     <section id="calendar" class="py-16 bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">📅 課程行事曆</h2>
-            </div>
-            <div class="flex justify-center">
-                <button onclick="openCalendar()"
-                    class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center space-x-3">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                    <span>查看完整行事曆</span>
-                </button>
-            </div>
-            <div class="mt-12 grid md:grid-cols-2 gap-6">
+
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
                 <div class="bg-blue-50 p-6 rounded-lg text-center">
-                    <div class="text-3xl mb-3">📚</div>
-                    <h3 class="font-semibold text-gray-800 mb-2">基礎語法</h3>
-                    <p class="text-gray-600 text-sm">上學期</p>
+                    <img src="img\git.png" height="50" width="50" class="block mx-auto mb-2"></img>
+                    <h3 class="font-semibold text-gray-800 mb-2">Git 指令</h3>
+                    <p class="text-gray-600 text-sm">版本控制</p>
                 </div>
                 <div class="bg-purple-50 p-6 rounded-lg text-center">
-                    <div class="text-3xl mb-3">🚀</div>
-                    <h3 class="font-semibold text-gray-800 mb-2">加深加廣</h3>
-                    <p class="text-gray-600 text-sm">下學期</p>
+                    <img src="img\website.png" height="50" width="50" class="block mx-auto mb-2"></img>
+                    <h3 class="font-semibold text-gray-800 mb-2">Github Page</h3>
+                    <p class="text-gray-600 text-sm">靜態網站</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <img src="img\azure.svg" height="50" width="50" class="block mx-auto mb-2"></img>
+                    <h3 class="font-semibold text-gray-800 mb-2">Github Models</h3>
+                    <p class="text-gray-600 text-sm">聊天機器人</p>
                 </div>
             </div>
         </div>
@@ -131,107 +123,14 @@
                         <div class="flex-1">
                             <div class="flex items-center space-x-3 mb-3">
                                 <span
-                                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">第1週</span>
-                                <span class="text-gray-500 text-sm">114/9/5</span>
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">第1週</span>
+                                <span class="text-gray-500 text-sm">114/10/1</span>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">體驗社課</h3>
-                            <p class="text-gray-600 mb-4">認識電算社</p>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Github Day 1</h3>
                             <div class="flex space-x-3">
                                 <button onclick="openSlide('week1')"
                                     class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
                                     📊 查看簡報
-                                </button>
-                                <button onclick="downloadCode('week1')"
-                                    class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    💾 下載範例
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Week 2 -->
-                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
-                    <div class="flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-3 mb-3">
-                                <span
-                                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">第2週</span>
-                                <span class="text-gray-500 text-sm">114/9/12</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">基本輸入輸出</h3>
-                            <p class="text-gray-600 mb-4"></p>
-                            <div class="flex space-x-3">
-                                <button onclick="openSlide('week2')"
-                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    📊 查看簡報
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Week 3 -->
-                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
-                    <div class="flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-3 mb-3">
-                                <span
-                                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">第3週</span>
-                                <span class="text-gray-500 text-sm">114/9/19</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">變數與四則運算</h3>
-                            <p class="text-gray-600 mb-4"></p>
-                            <div class="flex space-x-3">
-                                <button onclick="openSlide('week3')"
-                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    📊 查看簡報
-                                </button>
-                                <button onclick="downloadCode('zerojudge')"
-                                    class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    🏆 ZEROJUDGE題目
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Week 4 -->
-                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
-                    <div class="flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-3 mb-3">
-                                <span
-                                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">第4週</span>
-                                <span class="text-gray-500 text-sm">114/9/26</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">基本運算子與條件判斷</h3>
-                            <p class="text-gray-600 mb-4"></p>
-                            <div class="flex space-x-3">
-                                <button onclick="openSlide('week4')"
-                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    📊 查看簡報
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Week 5 -->
-                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
-                    <div class="flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-3 mb-3">
-                                <span
-                                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">第5週</span>
-                                <span class="text-gray-500 text-sm">114/10/3</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">迴圈 Ⅰ </h3>
-                            <p class="text-gray-600 mb-4"></p>
-                            <div class="flex space-x-3">
-                                <button onclick="openSlide('week5')"
-                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    📊 查看簡報
-                                </button>
-                                <button onclick="downloadCode('week5')"
-                                    class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                                    💾 題目解答
                                 </button>
                             </div>
                         </div>
@@ -245,31 +144,13 @@
         </div>
     </section>
 
-    <!-- Calendar Section -->
-    <section id="calendar" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">課程建議</h2>
-            </div>
-            <div class="flex justify-center">
-                <button onclick="openForm()"
-                    class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center space-x-3">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                    <span>填寫表單</span>
-                </button>
-            </div>
-        </div>
-    </section>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">電算社47屆Python班</h3>
+                    <h3 class="text-xl font-bold mb-4">電算社47屆小社課</h3>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">聯絡資訊</h4>
@@ -280,8 +161,7 @@
                 <div>
                     <h4 class="font-semibold mb-4">課程時間</h4>
                     <div class="space-y-2 text-gray-300">
-                        <p>🗓️ 每週五 15:10-16:00</p>
-                        <p>⏰ 共15週課程</p>
+                        <p>🗓️ 每週三 17:10-18:00</p>
                     </div>
                 </div>
             </div>
@@ -299,11 +179,7 @@
         // Slide functions
         function openSlide(week) {
             const slideInfo = {
-                'week1': 'https://hackmd.io/@CRC-YUSHAN/S1OomO2Fge',
-                'week2': 'https://hackmd.io/@CRC-YUSHAN/BySlh2r5ge#/',
-                'week3': 'https://hackmd.io/@CRC-YUSHAN/B1sorKHjlg',
-                'week4': 'https://hackmd.io/@CRC-YUSHAN/Sku3BKCslx',
-                'week5': 'https://hackmd.io/@CRC-YUSHAN/B1c4-HH2gx'
+                'week1': 'https://hackmd.io/@CRC-YUSHAN/r1KdGUYhex'
             };
             window.open(`${slideInfo[week]}`, '_blank');
         }
