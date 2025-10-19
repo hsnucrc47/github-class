@@ -156,6 +156,10 @@
                                     class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
                                     📊 查看簡報
                                 </button>
+                                <button onclick="openVideo('week2')"
+                                    class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                                    🎬 查看影片
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -231,6 +235,12 @@
                 'week5': ''
             };
             window.open(`${codeInfo[week]}`, '_blank');
+        }
+        function openVideo(mp4) {
+            const videoInfo = {
+                'week2': 'https://youtu.be/43pEF_jVmKU?si=QbRx1jH295adXeYU'
+            };
+            window.open(`${videoInfo[mp4]}`, '_blank');
         }
 
         // Smooth scrolling for navigation links
