@@ -200,6 +200,29 @@
                         </div>
                     </div>
                 </article>
+                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">第4週</span>
+                                <span class="text-gray-500 text-sm">114/10/29</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Github Day 4</h3>
+                            <p class="text-gray-600 mb-4">GitHub 常見檔案與用途</p>
+                            <div class="flex space-x-3">
+                                <button onclick="openSlide('week4')"
+                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                                    📊 查看簡報
+                                </button>
+                                <button onclick="openSlide('git1')"
+                                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-sm transition-colors flex items-center space-x-2">
+                                    <img src="img\git.png" height="20" width="20" class="block mx-auto mb-2"></img> Git 初始化指令
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
 
             <div class="text-center mt-8">
@@ -246,7 +269,8 @@
                 'git1':'https://hackmd.io/@CRC-YUSHAN/SJnZXG80ll',
                 'week1': 'https://hackmd.io/@CRC-YUSHAN/r1KdGUYhex',
                 'week2': 'https://hackmd.io/@CRC-YUSHAN/Hy2pag02ll',
-                'week3': 'https://hackmd.io/@CRC-YUSHAN/r1V9MzBAel'
+                'week3': 'https://hackmd.io/@CRC-YUSHAN/r1V9MzBAel',
+                'week4': 'https://hackmd.io/@CRC-YUSHAN/SJugAS0Aeg'
             };
             window.open(`${slideInfo[week]}`, '_blank');
         }
