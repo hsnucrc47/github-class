@@ -56,7 +56,6 @@
             <div class="text-center">
                 <h1 class="text-5xl font-bold mb-4">電算社47屆小社課</h1>
                 <img src="img\github-mark.png" height="110" width="110" class="block mx-auto"></img>
-
             </div>
         </div>
     </header>
@@ -331,6 +330,25 @@
                         </div>
                     </div>
                 </article>
+                <article class="bg-white border rounded-lg p-6 blog-post hover:shadow-lg transition-shadow">
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">第12週</span>
+                                <span class="text-gray-500 text-sm">114/12/17</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">GitHub Models - 串接 API</h3>
+                            <p class="text-gray-600 mb-4">初步連接 AI 模型</p>
+                            <div class="flex space-x-3">
+                                <button onclick="openSlide('week12')"
+                                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                                    📊 查看簡報
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             <div class="text-center mt-8">
                 <p class="text-gray-500">更多課程內容將陸續更新...</p>
             </div>
@@ -382,7 +400,8 @@
                 'week7':'https://hackmd.io/@CRC-YUSHAN/S1lk2w1l-g',
                 'week8': 'https://hackmd.io/@CRC-YUSHAN/HJUwU3KlZl',
                 'week10':'https://hackmd.io/@CRC-YUSHAN/r1nd7w3-Wx',
-                'week11':'https://hackmd.io/@CRC-YUSHAN/rJT8ujHf-x'
+                'week11':'https://hackmd.io/@CRC-YUSHAN/rJT8ujHf-x',
+                'week12':'https://hackmd.io/@CRC-YUSHAN/BkMTQH6fWl'
             };
             window.open(`${slideInfo[week]}`, '_blank');
         }
